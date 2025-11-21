@@ -69,7 +69,8 @@ import tool from './tool.png'
 import toolDark from './tool-dark.png'
 import home from './home.png'
 import homeDark from './home-dark.png'
-
+import web3form from './web3form.png'
+import motion from './motion.png'
 
 export const assets = {
     code_icon,
@@ -141,7 +142,9 @@ export const assets = {
     tool,
     toolDark,
     home,
-    homeDark
+    homeDark,
+    web3form,
+    motion
 
 };
 

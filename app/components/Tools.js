@@ -5,7 +5,7 @@ import { motion } from "motion/react"
 
 const About = ({ isDarkMode }) => {
   return (
-    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} id="about" className='w-full px-[12%] py-17 md:py-30 min-h-screen leading-7 '>
+    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} id="about" className='w-full px-[12%] py-17 md:py-27 min-h-screen leading-7 '>
 
       <motion.h4 initial={{ opacity: 0, y: -20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }} className='text-center mb-2 text-xl font-Ovo'>My Toolkit</motion.h4>
 
@@ -33,7 +33,7 @@ const About = ({ isDarkMode }) => {
   >
         <motion.ul initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6, delay: 1.5 }} className='flex gap-3 sm:gap-5 w-max'>
         
-            <motion.li whileHover={{ scale: 1.01 }} className='flex-shrink-0 flex items-center justify-center w-12 sm:w-20 aspect-square border border-gray-400 rounded-lg hover:-translate-y-1 duration-500 dark:border-white'>
+            <motion.li whileHover={{ scale: 1.1 }} className='flex-shrink-0 flex items-center justify-center w-12 sm:w-20 aspect-square border border-gray-400 rounded-lg hover:-translate-y-1 duration-500 dark:border-white'>
               <Image src= {assets.react_icon} alt='Tool' className='w-5 sm:w-10' />
             </motion.li>
 
@@ -121,15 +121,23 @@ const About = ({ isDarkMode }) => {
               <Image src= { isDarkMode?assets.Verceldark : assets.Vercel} alt='Tool' className='w-5 sm:w-10' />
             </motion.li>
 
-            <motion.li whileHover={{ scale: 1.01 }} className='flex-shrink-0 flex items-center justify-center w-12 sm:w-20 aspect-square border border-gray-400 rounded-lg hover:-translate-y-1 duration-500 dark:border-white'>
+            <motion.li whileHover={{ scale: 1.1 }} className='flex-shrink-0 flex items-center justify-center w-12 sm:w-20 aspect-square border border-gray-400 rounded-lg hover:-translate-y-1 duration-500 dark:border-white'>
               <Image src= { isDarkMode? assets.Renderdark : assets.Render} alt='Tool' className='w-5 sm:w-10' />
+            </motion.li>
+
+            <motion.li whileHover={{ scale: 1.1 }} className='flex-shrink-0 flex items-center justify-center w-12 sm:w-20 aspect-square border border-gray-400 rounded-lg hover:-translate-y-1 duration-500 dark:border-white'>
+              <Image src= {assets.web3form} alt='Tool' className='w-5 sm:w-10' />
+            </motion.li>
+
+            <motion.li whileHover={{ scale: 1.1 }} className='flex-shrink-0 flex items-center justify-center w-12 sm:w-20 aspect-square border border-gray-400 rounded-lg hover:-translate-y-1 duration-500 dark:border-white'>
+              <Image src= {assets.motion} alt='Tool' className='w-5 sm:w-10' />
             </motion.li>
 
         
         </motion.ul>
         <motion.ul initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6, delay: 1.5 }} className='flex gap-3 sm:gap-5 w-max'>
         
-            <motion.li whileHover={{ scale: 1.01 }} className='flex-shrink-0 flex items-center justify-center w-12 sm:w-20 aspect-square border border-gray-400 rounded-lg hover:-translate-y-1 duration-500 dark:border-white'>
+            <motion.li whileHover={{ scale: 1.1 }} className='flex-shrink-0 flex items-center justify-center w-12 sm:w-20 aspect-square border border-gray-400 rounded-lg hover:-translate-y-1 duration-500 dark:border-white'>
               <Image src= {assets.react_icon} alt='Tool' className='w-5 sm:w-10' />
             </motion.li>
 
@@ -217,9 +225,18 @@ const About = ({ isDarkMode }) => {
               <Image src= { isDarkMode?assets.Verceldark : assets.Vercel} alt='Tool' className='w-5 sm:w-10' />
             </motion.li>
 
-            <motion.li whileHover={{ scale: 1.01 }} className='flex-shrink-0 flex items-center justify-center w-12 sm:w-20 aspect-square border border-gray-400 rounded-lg hover:-translate-y-1 duration-500 dark:border-white'>
+            <motion.li whileHover={{ scale: 1.1 }} className='flex-shrink-0 flex items-center justify-center w-12 sm:w-20 aspect-square border border-gray-400 rounded-lg hover:-translate-y-1 duration-500 dark:border-white'>
               <Image src= { isDarkMode? assets.Renderdark : assets.Render} alt='Tool' className='w-5 sm:w-10' />
             </motion.li>
+
+            <motion.li whileHover={{ scale: 1.1 }} className='flex-shrink-0 flex items-center justify-center w-12 sm:w-20 aspect-square border border-gray-400 rounded-lg hover:-translate-y-1 duration-500 dark:border-white'>
+              <Image src= {assets.web3form} alt='Tool' className='w-5 sm:w-10' />
+            </motion.li>
+
+            <motion.li whileHover={{ scale: 1.1 }} className='flex-shrink-0 flex items-center justify-center w-12 sm:w-20 aspect-square border border-gray-400 rounded-lg hover:-translate-y-1 duration-500 dark:border-white'>
+              <Image src= {assets.motion} alt='Tool' className='w-5 sm:w-10' />
+            </motion.li>
+
 
         
         </motion.ul>
