@@ -5,11 +5,11 @@ import { motion } from "motion/react"
 
 const About = ({ isDarkMode }) => {
   return (
-    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} id="about" className='w-full px-[12%] py-30 min-h-screen leading-7 '>
+    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} id="about" className='w-full px-[12%] py-17 md:py-30 min-h-screen leading-7 '>
 
       <motion.h4 initial={{ opacity: 0, y: -20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }} className='text-center mb-2 text-xl font-Ovo'>My Toolkit</motion.h4>
 
-      <motion.h2 initial={{ opacity: 0, y: -20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.5 }} className='text-center text-5xl font-Ovo'>Technologies I Use</motion.h2>
+      <motion.h2 initial={{ opacity: 0, y: -20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.5 }} className='text-center text-3xl md:text-5xl font-Ovo'>Technologies I Use</motion.h2>
 
       <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.8 }} className='flex-1'>
         <p className='my-4  font-Ovo text-center'>I specialize in building full-stack web applications with a strong foundation in both frontend and backend technologies. On the frontend, I work with React.js, Next.js, HTML5, CSS3, JavaScript (ES6+), Tailwind CSS, Redux, and Bootstrap to create modern, responsive, and user-friendly interfaces, while leveraging Figma for designing clean and intuitive UI/UX. On the backend, I have hands-on experience with Node.js, Express.js, MongoDB, Mongoose along with building and testing RESTful APIs and implementing real-time functionality using Socket.IO. I am also proficient with essential development tools and platforms including Git, GitHub, VS Code, Postman, Vercel, and Render, which help me streamline development, testing, and deployment workflows. Additionally, I have experience managing media with ImageKit and Cloudinary and integrating secure payment solutions using Stripe. This combination of skills allows me to develop end-to-end solutions—from crafting polished, interactive frontends to designing robust backends and deploying production-ready applications—ensuring seamless and efficient user experiences.</p>
