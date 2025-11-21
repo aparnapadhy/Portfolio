@@ -47,7 +47,7 @@ const Contact = () => {
 
       <motion.form initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.5,delay:0.9 }} onSubmit={onSubmit} className='max-w-2xl mx-auto'>
 
-        <div className='flex gap-5 mb-4'>
+        <div className='flex-col md:flex gap-5 mb-4'>
 
           <motion.input initial={{x:-50, opacity:0}} whileInView={{x:0, opacity:1}} transition={{duration:0.6,delay:1.1 }}
             type="text"
