@@ -39,11 +39,13 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
             <li><a href="#work" className='font-Ovo flex items-center gap-1'><Image width={17} src={isDarkMode?assets.portfolioDark : assets.portfolio} alt="" />My Work</a></li>
             <li><a href="#contact" className='font-Ovo flex items-center gap-1'><Image width={17} src={isDarkMode?assets.mailDark : assets.mail} alt="" />Contact Me</a></li>
         </ul>
-        <div className='flex items-center gap-4'>
+        <div className="flex items-center w-full md:w-auto justify-between md:justify-normal gap-4">
+
+
             <EmojiToggle enabled={isDarkMode} setEnabled={setIsDarkMode} />
 
            
-            <button className='block md:hidden ml-55'>
+            <button className='block md:hidden'>
                 <Image onClick={openMenu} src={isDarkMode? assets.menu_white : assets.menu_black} alt='' className='w-6'/>
             </button>
         </div>
