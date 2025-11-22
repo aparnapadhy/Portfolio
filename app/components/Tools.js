@@ -21,12 +21,12 @@ const About = ({ isDarkMode }) => {
 >
   <motion.div
     className='flex gap-3 sm:gap-5 w-max'
-    animate={{ x: ["20%", "-100%"] }}  // horizontal motion
+    animate={{ x: ["20%", "-100%"] }}  
     transition={{
       x: {
         repeat: Infinity,
         repeatType: "loop",
-        duration: 80, // adjust speed
+        duration: 80, 
         ease: "linear",
       },
     }}
